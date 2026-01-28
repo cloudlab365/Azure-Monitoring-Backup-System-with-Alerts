@@ -1,12 +1,10 @@
 # Azure-Monitoring-Backup-System-with-Alerts
 Skills demonstrated: Azure Monitor, Alerts, Backup Vaults, Policies, Resource Graph
 
-# Azure Cloud Migration and Architecture Project
+A fully‑built cloud monitoring and business‑continuity solution using Azure Monitor, Log Analytics, Backup Vaults, Alerts, and Azure Resource Graph.
+This project showcases operational excellence and automated resilience.
 
-In this project, I design and implement a complete Azure environment for a global medical research company migrating from on-premises infrastructure to Microsoft Azure.  
-My goal is to demonstrate how I approach real-world Azure architecture — covering planning, cost optimization, networking, identity governance, data platform integration, automation, and monitoring.
-
-Each stage includes detailed documentation, example scripts, and diagrams to make it easy to understand or reproduce in your own Azure subscription.
+Each stage includes detailed documentation, screenshots, and diagrams to make it easy to understand or reproduce in your own Azure subscription.
 
 ---
 
@@ -24,11 +22,15 @@ Each stage includes detailed documentation, example scripts, and diagrams to mak
 
 ## Project Goal
 
-My objective is to demonstrate how I plan, build, and document an end-to-end **Azure migration and architecture** that is secure, automated, and cost-efficient.  
-This project reflects my approach as an **Azure Solutions Architect**, focusing on design principles, governance, and operational excellence.
+To design and implement a centralized Azure monitoring and backup solution that collects metrics, triggers actionable alerts, and protects workloads using automated backup policies. The goal is to provide visibility, reliability, and business continuity across cloud resources.
 
 ---
 
 ## Outcome
 
-By following this project, you’ll see how I create a complete, production-ready Azure environment that integrates infrastructure, security, automation, and data services — just like in a real enterprise migration.
+By the end of this project, you achieve:
+
+- A scalable monitoring architecture using Log Analytics
+- Automated alerting across compute, storage, and SQL services
+- Backup policies ensuring data protection and disaster recovery
+- A performance dashboard for proactive resource management
