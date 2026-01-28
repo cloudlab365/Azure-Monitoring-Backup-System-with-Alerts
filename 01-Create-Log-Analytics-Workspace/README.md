@@ -1,28 +1,31 @@
 # 01 Log Analytics workspace collecting metrics from VMs, SQL, and storage
 
 ## Objective
-This exercise is part of the **Plan and Create Infrastructure** phase.  
-It demonstrates manual deployment of a baseline virtual machine before automating infrastructure creation with Azure CLI and Bicep in subsequent exercises.
+This guide walks through building a complete monitoring and backup solution using Azure Monitor, Log Analytics, Alerts, Backup Vaults, and Dashboards.
 
 
 ---
 
-## Prerequisites
+## 1. Prerequisites
 - Active [Azure Free Trial](https://azure.microsoft.com/free/)
-- Access to the Azure Portal
-- Basic understanding of Virtual Machines, networking, and cloud resource groups
+- Contributor or Owner role on the subscription/resource group
+- Basic understanding of Azure VMs, SQL databases, and storage accounts
+- Azure Portal or CLI access
 
 ---
 
-## Step-by-Step Implementation
+##  2. Create a Resource Group (This will contain all monitoring and backup resources.)
 
-### Step 1 — Navigate to Create a Virtual Machine
+### Step 1 — Navigate to Resource Groups
 From the Azure Portal home screen:
-> **Home → Create a resource → Compute → Virtual Machine**
+> **Home → Resource Groups → Create**
 
-This opens the *Create a virtual machine* wizard.
+This opens the *Create a Resource Groups* wizard.
+Name: rg-monitoring-lab
+Region: closest to you
+Click Review + Create
 
-![Create a VM - Basics Tab](../images/1.Create%20VM.png)
+![Create a Resource Group - Basics Tab](../images/1.Create%20VM.png)
 
 
 ---
