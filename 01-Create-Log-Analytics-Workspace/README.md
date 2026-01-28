@@ -21,31 +21,31 @@ From the Azure Portal home screen:
 > **Home → Resource Groups → Create**
 
 This opens the *Create a Resource Groups* wizard.
-Name: rg-monitoring-lab
-Region: closest to you
-Click Review + Create
+| Setting | Value |
+|----------|--------|
+| **Subscription** | Azure subscription 1 |
+| **Resource group** | `rg-monitoring-lab` |
+> **Click → Review  → Create**
 
 ![Create a Resource Group - Basics Tab](../images/1.Create%20VM.png)
 
 
 ---
 
-### Step 2 — Configure Basic Settings
+### Step 2 — Create a Log Analytics Workspace (This will collect metrics & logs from VMs, SQL, and Storage.)
 Fill out the fields as follows:
+
+From the Azure Portal home screen:
+> **Search: Log Analytics workspaces → Create**
 
 | Setting | Value |
 |----------|--------|
 | **Subscription** | Azure subscription 1 |
-| **Resource group** | `vm-uk-research-01_group` |
-| **Virtual machine name** | `vm-uk-research-01` |
-| **Region** | East US 2 |
-| **Availability options** | No infrastructure redundancy required |
-| **Security type** | Standard |
-| **Image** | Windows Server 2022 Datacenter: Azure Edition (Gen2) |
-| **Size** | Standard B1s (1 vCPU, 1 GiB memory – free-tier eligible) |
-| **Username** | `azureuser` |
-| **Password** | (your secure password) |
-| **Inbound ports** | Allow selected ports → RDP (3389) |
+| **Resource group** | `rg-monitoring-lab` |
+| **Workspace Name** | `law-monitoring` |
+| **Region** | same region |
+> **Click → Review  → Create**
+
 
 > ⚠️ **Note:** Opening RDP (3389) to all IP addresses is suitable for testing only.  
 > In production, restrict access using known IPs or a VPN.
